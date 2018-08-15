@@ -11,6 +11,6 @@ RUN useradd -m openwrt &&\
 USER openwrt
 WORKDIR /home/openwrt
 
-RUN git clone git://git.openwrt.org/openwrt/openwrt.git -b lede-17.01 &&\
+RUN git clone git://git.openwrt.org/openwrt/openwrt.git -b v17.01.5 &&\
     openwrt/scripts/feeds update -a
 
